@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
-import '../Style/BoardList.css';
+import '../Style/UserList.module.css'
 const BoardL = ({ lista, eliminarAlumno }) => {
 
     return (
