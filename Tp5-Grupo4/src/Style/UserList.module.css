@@ -1,0 +1,47 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #555;
+  color: #eee;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%; 
+  max-width: 1200px; 
+  background-color: #222; 
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); 
+  border: 1px solid #666;
+  margin: 0 auto;
+  font-size: 11px; 
+}
+
+thead {
+  background-color: #007bff; 
+  color: white;
+  text-align: center;
+}
+
+tbody tr {
+    background-color: #333; 
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
