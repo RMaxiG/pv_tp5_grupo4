@@ -8,12 +8,12 @@ const NavBar = () => {
         <ul className={Styles.navbarList}>
           <li>
             <Link to="/" className={Styles.navbarLink}>
-              Home
+              Inicio
             </Link>
           </li>
           <li>
             <Link to="/ListAlumnos" className={Styles.navbarLink}>
-              Lista de Alumnos
+              Alumnos
             </Link>
           </li>
           <li>
@@ -23,7 +23,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/acercad" className={Styles.navbarLink}>
-              Acerda de Nosotros
+              Acerca de Nosotros
             </Link>
           </li>
         </ul>
