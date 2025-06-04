@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../Style/UserForm.module.css';
+import styles from '../Style/UserForm.module.css';
 
 const Formulario = (estudiantes) => {
     const [nuevo, setNuevo] = estudiantes.list
@@ -16,11 +16,11 @@ const Formulario = (estudiantes) => {
 
     return (
         <div className={styles.formContainer}>
-            <h3 className={styles.title}>Formulario de Nuevo Alumno</h3>
+            <h3 className={styles.title}>Añadir Nuevo Alumno</h3>
             <form onSubmit={handleSubmit} className={styles.form}>
-                <label className={styles.label}>Lu:</label>
+                <label className={styles.label}> LU:</label>
                 <input type="text" name="libreta" className={styles.input} value={formData.lu} onChange={(e) => setFormData((prev) => ({ ...prev, lu: e.target.value }))} required></input><br></br>
-                <label className={styles.label}>Nombre Completo:</label>
+                <label className={styles.label}>Nombre/s:</label>
                 <input type="text" name="NombreC" className={styles.input} value={formData.nombre} onChange={(e) => setFormData((prev) => ({ ...prev, nombre: e.target.value }))} required></input><br></br>
                 <label className={styles.label}>Apellido:</label>
                 <input type="text" name="Apellido" className={styles.input} value={formData.apellido} onChange={(e) => setFormData((prev) => ({ ...prev, apellido: e.target.value }))} required></input><br></br>
