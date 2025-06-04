@@ -7,7 +7,8 @@ import DetalleAlumno from './Views/UserDetails';
 import EditarAlumno from './Views/UserEdit';
 import Inicio from './Views/Home';
 import AboutUs from './Views/AboutUs';
-import './App.css'
+import './App.css';
+import './index.css';
 function App() {
   const [estudiantes, setEstudiantes] = useState([
     { Lu: 'APU00999', nombre: 'María Eugenia', apellido: 'Diaz', curso: 'Tercero', correo: 'mariadiaz@mail.com', domicilio: 'Av. Congreso 125', teléfono: 3884895999 },
