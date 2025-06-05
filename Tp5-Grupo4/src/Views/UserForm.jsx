@@ -19,20 +19,74 @@ const Formulario = (estudiantes) => {
             <h3 className={styles.title}>Añadir Nuevo Alumno</h3>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <label className={styles.label}> LU:</label>
-                <input type="text" name="libreta" className={styles.input} value={formData.lu} onChange={(e) => setFormData((prev) => ({ ...prev, lu: e.target.value }))} required></input><br></br>
+                <input
+                    type="text"
+                    name="libreta"
+                    className={styles.input}
+                    value={formData.lu}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, lu: e.target.value }))}
+                    required>
+                </input><br></br>
                 <label className={styles.label}>Nombre/s:</label>
-                <input type="text" name="NombreC" className={styles.input} value={formData.nombre} onChange={(e) => setFormData((prev) => ({ ...prev, nombre: e.target.value }))} required></input><br></br>
+                <input
+                    type="text"
+                    name="NombreC"
+                    className={styles.input}
+                    value={formData.nombre}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, nombre: e.target.value }))}
+                    required>
+                </input><br></br>
                 <label className={styles.label}>Apellido:</label>
-                <input type="text" name="Apellido" className={styles.input} value={formData.apellido} onChange={(e) => setFormData((prev) => ({ ...prev, apellido: e.target.value }))} required></input><br></br>
+                <input
+                    type="text"
+                    name="Apellido"
+                    className={styles.input}
+                    value={formData.apellido}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, apellido: e.target.value }))}
+                    required
+                ></input><br></br>
                 <label className={styles.label}>Curso:</label>
-                <input type="text" name="Curso" className={styles.input} value={formData.curso} onChange={(e) => setFormData((prev) => ({ ...prev, curso: e.target.value }))} required></input><br></br>
+                <select
+                    name="Curso"
+                    className={styles.input}
+                    value={formData.curso}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, curso: e.target.value }))}
+                    required
+                >
+                    <option value="">Seleccione un curso</option>
+                    <option value="Primero">Primero</option>
+                    <option value="Segundo">Segundo</option>
+                    <option value="Tercero">Tercero</option>
+                </select>
+                <br></br>
                 <label className={styles.label}>Correo Electronico:</label>
-                <input type="email" name="Correo" className={styles.input} value={formData.email} onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))} required ></input><br></br>
+                <input
+                    type="email"
+                    name="Correo"
+                    className={styles.input}
+                    value={formData.email}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+                    required
+                ></input><br></br>
                 <label className={styles.label}>Domicilio:</label>
-                <input type="text" name="Domilic" className={styles.input} value={formData.domicilio} onChange={(e) => setFormData((prev) => ({ ...prev, domicilio: e.target.value }))} required></input><br></br>
+                <input
+                    type="text"
+                    name="Domilic"
+                    className={styles.input}
+                    value={formData.domicilio}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, domicilio: e.target.value }))}
+                    required
+                ></input><br></br>
                 <label className={styles.label}>Telefono:</label>
-                <input type="number" name="tel" className={styles.input} value={formData.telefono} onChange={(e) => setFormData((prev) => ({ ...prev, telefono: e.target.value }))} required></input><br></br>
-                <button type="submit"className={styles.submitButton}>Guardar</button>
+                <input
+                    type="number"
+                    name="tel"
+                    className={styles.input}
+                    value={formData.telefono}
+                    onChange={(e) => setFormData((prev) => ({ ...prev, telefono: e.target.value }))}
+                    required
+                ></input><br></br>
+                <button type="submit" className={styles.submitButton}>Guardar</button>
             </form>
         </div>
     )
