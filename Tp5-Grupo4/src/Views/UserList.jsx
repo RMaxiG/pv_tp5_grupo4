@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
-import '../Style/UserList.module.css'
+import styles from '../Style/UserList.module.css'
 const BoardL = ({ lista, eliminarAlumno }) => {
 
     return (
@@ -22,9 +22,10 @@ const BoardL = ({ lista, eliminarAlumno }) => {
                             <td>{dato.apellido}</td>
                             <td>
                                 <div className="action-buttons">
-                                    <Link to={`/editar/${dato.Lu}`}> Editar </Link>
-                                    <button onClick={() => eliminarAlumno(dato.Lu)}> Eliminar </button>
-                                    <Link to={`/alumno/${dato.Lu}`}> Ver Detalles</Link>
+                                    <Link 
+                                    to={`/editar/${dato.Lu}`} className={`${styles.btn} ${styles.edit}`}> Editar </Link>
+                                    <button onClick={() => eliminarAlumno(dato.Lu)} className={`${styles.btn} ${styles.delete}`}> Eliminar </button>
+                                    <Link to={`/alumno/${dato.Lu}`} className={`${styles.btn} ${styles.details}`}> Ver Detalles</Link>
                                 </div>
                             </td>
                         </tr>))
