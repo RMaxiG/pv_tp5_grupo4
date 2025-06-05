@@ -11,10 +11,6 @@ const BoardL = ({ lista, eliminarAlumno }) => {
                         <th>LU</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Curso</th>
-                        <th>Email</th>
-                        <th>Domicilio</th>
-                        <th>Telefono</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -24,10 +20,6 @@ const BoardL = ({ lista, eliminarAlumno }) => {
                             <td>{dato.Lu}</td>
                             <td>{dato.nombre}</td>
                             <td>{dato.apellido}</td>
-                            <td>{dato.curso}</td>
-                            <td>{dato.correo}</td>
-                            <td>{dato.domicilio}</td>
-                            <td>{dato.teléfono}</td>
                             <td>
                                 <div className="action-buttons">
                                     <Link to={`/editar/${dato.Lu}`}> Editar </Link>
