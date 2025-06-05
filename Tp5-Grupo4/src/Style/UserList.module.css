@@ -83,3 +83,16 @@ tbody tr {
 .btn.details:hover {
   background-color: #0056b3;
 }
+.emptyMessage {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #02398c;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(1, 61, 135, 0.3);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}

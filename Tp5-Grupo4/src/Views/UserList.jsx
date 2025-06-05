@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import styles from '../Style/UserList.module.css'
 const BoardL = ({ lista, eliminarAlumno }) => {
 
+    if(lista.length === 0) return (<p className={styles.emptyMessage}>Lista vacia. ¡Agregue Alumnos!</p>)
     return (
         <div className="board-container">
             <h3>Listado de Alumnos</h3>
